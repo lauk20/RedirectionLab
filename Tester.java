@@ -6,5 +6,11 @@ public class Tester{
     System.out.println(PigLatin.pigLatinSimple("arron"));
     System.out.println(PigLatin.pigLatinSimple("a"));
     System.out.println(PigLatin.pigLatinSimple("ba"));
+
+    System.out.println(PigLatin.pigLatin("the"));
+    System.out.println(PigLatin.pigLatin("check"));
+    System.out.println(PigLatin.pigLatin("skee"));
+    System.out.println(PigLatin.pigLatin("emu"));
+    System.out.println(PigLatin.pigLatin("grade"));
   }
 }
