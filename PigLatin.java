@@ -26,7 +26,7 @@ public class PigLatin{
       for (int i = 0; i < digraphs.length; i++){
         if (s.substring(0, 2).equals(digraphs[i])){
           for (int j = 0; j < s.length(); j++){
-            if (i != 0 && i != 1){
+            if (j != 0 && j != 1){
               result = result + s.charAt(j);
             }
           }

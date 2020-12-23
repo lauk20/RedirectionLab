@@ -12,5 +12,6 @@ public class Tester{
     System.out.println(PigLatin.pigLatin("skee"));
     System.out.println(PigLatin.pigLatin("emu"));
     System.out.println(PigLatin.pigLatin("grade"));
+    System.out.println(PigLatin.pigLatin("fl"));
   }
 }
