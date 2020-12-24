@@ -49,7 +49,7 @@ public class PigLatin{
       }
       else{
         if (s.charAt(s.length() - 1) < 'a' || s.charAt(s.length() - 1) < 'z'){
-          return pigLatin(s.substring(0, s.length())) + s.charAt(s.length() - 1);
+          return pigLatin(s.substring(0, s.length() - 1)) + s.charAt(s.length() - 1);
         }
       }
     }
