@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class PigLatin{
   public static String pigLatinSimple(String s){
     s = s.toLowerCase();
@@ -48,12 +50,33 @@ public class PigLatin{
         return s;
       }
       else{
-        if (s.charAt(s.length() - 1) < 'a' || s.charAt(s.length() - 1) < 'z'){
+        if (s.charAt(s.length() - 1) < 'a' || s.charAt(s.length() - 1) > 'z'){
           return pigLatin(s.substring(0, s.length() - 1)) + s.charAt(s.length() - 1);
         }
       }
     }
 
     return pigLatin(s);
+  }
+
+  public static void main(String[] args){
+    Scanner file = new Scanner(System.in);
+
+    while (file.hasNextLine()){
+      String line = file.nextLine();
+      Scanner text = new Scanner(line);
+
+      while(text.hasNext()){
+        String next = text.next();
+        System.out.print(pigLatinBest(next));
+        if (text.hasNext()){
+          System.out.print(" ");
+        }
+      }
+
+      if (file.hasNextLine()){
+        System.out.println();
+      }
+    }
   }
 }

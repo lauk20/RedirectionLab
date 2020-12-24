@@ -22,5 +22,7 @@ public class Tester{
     System.out.println(PigLatin.pigLatinBest("cat!"));
     System.out.println(PigLatin.pigLatinBest("amazing?"));
     System.out.println(PigLatin.pigLatinBest("apple%"));
+    System.out.println(PigLatin.pigLatinBest("to"));
+    System.out.println(PigLatin.pigLatinBest("poet's"));
   }
 }
