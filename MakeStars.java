@@ -12,17 +12,22 @@ public class MakeStars{
         String next = text.next();
 
         for (int i = 0; i < next.length(); i++){
-          result = result + "*";
+          //result = result + "*";
+          System.out.print("*");
         }
 
-        result = result + " ";
+        if (text.hasNext()){
+          System.out.print(" ");
+          //result = result + " ";
+        }
       }
 
       if (file.hasNextLine()){
-        result = result + "\n";
+        //result = result + "\n";
+        System.out.println();
       }
     }
 
-    System.out.println(result);
+    //System.out.println(result);
   }
 }
