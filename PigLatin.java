@@ -50,7 +50,7 @@ public class PigLatin{
         return s;
       }
       else{
-        if (s.charAt(s.length() - 1) < 'a' || s.charAt(s.length() - 1) > 'z'){
+        if ((s.charAt(s.length() - 1) < 'a' || s.charAt(s.length() - 1) > 'z') && (s.charAt(s.length() - 1) < '0' || s.charAt(s.length() - 1) > '9')){
           return pigLatin(s.substring(0, s.length() - 1)) + s.charAt(s.length() - 1);
         }
       }
